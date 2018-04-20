@@ -1,7 +1,6 @@
 class SessionsController < ApplicationController
   def new
     if params[:name]
-      @name = params[:name]
       redirect_to '/'
 
     else
