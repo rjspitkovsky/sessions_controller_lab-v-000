@@ -2,7 +2,8 @@ class SessionsController < ApplicationController
   def new
     if params[:username]
       redirect_to '/'
-    end 
+    else
+      redirect_to '/new'
   end
 
   def create
