@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
   def new
-    if params[:username]
-      @name = params[:username]
+    if params[:name]
+      @name = params[:name]
       redirect_to '/'
 
     else
@@ -10,14 +10,14 @@ class SessionsController < ApplicationController
   end
 
   def create
-    if params[:username]
-      session[:username] = params[:username]
+    if params[:name]
+      session[:name] = params[:name]
     else
       redirect_to '/sessions/new'
     end
   end
 
   def destroy
-    session.destroy :username
+    session.destroy :name
   end
 end
