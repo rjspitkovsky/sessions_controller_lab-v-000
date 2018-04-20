@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
     if params[:username]
       @name = params[:username]
       redirect_to '/'
-      
+
     else
       redirect_to '/new'
   end
