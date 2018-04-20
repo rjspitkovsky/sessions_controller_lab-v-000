@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
       redirect_to '/'
 
     else
-      redirect_to '/sessions/new'
+      redirect_to '/login'
     end
   end
 
