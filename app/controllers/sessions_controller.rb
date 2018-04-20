@@ -13,11 +13,11 @@ class SessionsController < ApplicationController
     if params[:name]
       session[:name] = params[:name]
     else
-      redirect_to '/sessions/new'
+      redirect_to '/login'
     end
   end
 
   def destroy
-    session[:name].destroy 
+    session[:name].destroy
   end
 end
