@@ -5,8 +5,8 @@ class SessionsController < ApplicationController
       redirect_to '/'
 
     else
-      redirect_to '/new'
-    end 
+      redirect_to '/sessions/new'
+    end
   end
 
   def create
